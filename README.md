@@ -1,4 +1,4 @@
-#1.cloud2020
+#cloud2020
 
     cloud-api-commons:公共包 
     cloud-consumer-order80:消费端
@@ -7,7 +7,7 @@
     cloud-provider-payment8001:生产端
     cloud-provider-payment8002:生产端
 
-#2.注册中心不同时注意点
+#注册中心不同时注意点
 
     @EnableEurekaClient 只有在注册中心为eureka时使用，
     服务发现使用@EnableDiscoveryClient
