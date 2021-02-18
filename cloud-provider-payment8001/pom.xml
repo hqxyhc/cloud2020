@@ -29,6 +29,13 @@
         <!--            <artifactId>zookeeper</artifactId>-->
         <!--            <version>3.4.14</version>-->
         <!--        </dependency>-->
+
+        <!--springcloud consul-server-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.cloud</groupId>-->
+        <!--            <artifactId>spring-cloud-starter-consul-discovery</artifactId>-->
+        <!--        </dependency>-->
+
         <dependency>
             <groupId>com.atguigu.springcloud</groupId>
             <artifactId>cloud-api-commons</artifactId>

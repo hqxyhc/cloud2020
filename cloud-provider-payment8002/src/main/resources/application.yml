@@ -39,6 +39,17 @@ spring:
 #    zookeeper:
 #      connect-string: 192.168.81.129:2181
 
+#spring:
+#  application:
+#    name: consul-provider-payment
+#    #consul注册中心地址
+#  cloud:
+#    consul:
+#      host: localhost
+#      port: 8500
+#      discovery:
+#        service-name: ${spring.application.name}
+
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   #所有entity别名类所在包
