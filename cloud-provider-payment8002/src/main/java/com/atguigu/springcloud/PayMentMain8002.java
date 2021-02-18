@@ -9,8 +9,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * Hello world!
  */
 @SpringBootApplication
-@EnableEurekaClient
-@EnableDiscoveryClient
+@EnableEurekaClient  //zookeeper注册中心时，去除
+@EnableDiscoveryClient////该注解用于向使用consul或者zookeeper作为注册中心时注册服务
 public class PayMentMain8002 {
     public static void main(String[] args) {
         SpringApplication.run(PayMentMain8002.class,args);
