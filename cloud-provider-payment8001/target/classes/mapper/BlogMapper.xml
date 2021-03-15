@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.atguigu.springcloud.dao.BlogDao">
+
+    <insert id="add" parameterType="Blog" useGeneratedKeys="true"
+            keyProperty="id">
+        insert into blog(id,
+                        title,
+                        content,
+                        tips,
+                        writer,
+                        lasttime,
+                        kind,
+                        readnum,
+                        likenum
+                        )
+        values (        #{id},
+                        #{title},
+                        #{content},
+                        #{tips},
+                        #{writer},
+                        #{lastTime},
+                        #{kind},
+                        #{readNum},
+                        #{likeNum}
+                        );
+    </insert>
+
+<!--    <resultMap id="BaseResultMap" type="com.atguigu.springcloud.pojo.Payment">-->
+<!--        <id column="id" property="id" jdbcType="BIGINT"></id>-->
+<!--        <id column="serial" property="serial" jdbcType="VARCHAR"></id>-->
+<!--    </resultMap>-->
+
+    <select id="getBlogById" parameterType="String" resultType="Blog">
+        select *
+        from blog
+        where id = #{id};
+    </select>
+
+</mapper>
